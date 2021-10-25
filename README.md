@@ -6,7 +6,7 @@ This repository contains all the codes and pretrianed models used for the experi
 Linkes: [[Preprint](https://www.biorxiv.org/content/10.1101/2021.06.18.448989v2)]  [[Project Page](https://ventral-dorsal-model.netlify.app/)]
 
 
-### Requirements
+## Requirements
 
 + Allen SDK (https://allensdk.readthedocs.io/en/latest/)
 + scipy
@@ -17,7 +17,7 @@ Linkes: [[Preprint](https://www.biorxiv.org/content/10.1101/2021.06.18.448989v2)
 + torchvision
 
 
-### Analysis 
+## Analysis 
 
 Use the Analysis jupyter notebook in the RSM folder to run the analysis and reproduce the figures. The generated figures will be stored in the Figures folder. 
 
