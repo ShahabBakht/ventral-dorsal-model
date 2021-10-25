@@ -1,4 +1,4 @@
-### The functional specialization of visual cortex emerges from training parallel pathways with self-supervised predictive learning
+## The functional specialization of visual cortex emerges from training parallel pathways with self-supervised predictive learning
 
 
 This repository contains all the codes and pretrianed models used for the experiments reported in the NeurIPS 2021 spotlight paper: "The functional specialization of visual cortex emerges from training parallel pathways with self-supervised predictive learning" 
