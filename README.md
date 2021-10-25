@@ -7,6 +7,8 @@ Linkes: [[Preprint](https://www.biorxiv.org/content/10.1101/2021.06.18.448989v2)
 
 ![arch](asset/website_visual4x.png)
 
+<img src="asset/website_visual4x.png" alt="visual" width="200"/>
+
 ## Requirements
 
 + Allen SDK (https://allensdk.readthedocs.io/en/latest/)
