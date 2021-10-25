@@ -5,9 +5,7 @@ This repository contains all the codes and pretrianed models used for the experi
 
 Linkes: [[Preprint](https://www.biorxiv.org/content/10.1101/2021.06.18.448989v2)]  [[Project Page](https://ventral-dorsal-model.netlify.app/)]
 
-%![arch](asset/website_visual4x.png)
-
-<img src="asset/website_visual4x.png" alt="visual" width="800"/>
+![arch](asset/website_visual4x.png)
 
 ## Requirements
 
