@@ -1,0 +1,86 @@
+model:
+    Retina:
+        in_channels: 3
+        out_channels: 12 #32
+        kernel_size: 9
+        padding: 4
+#     LGN:
+#         out_channels: 8
+#         kernel_size: 9
+#         padding: 4
+    VISp:
+        L4_out_channels: 32
+        L4_kernel_size: 10
+        L4_padding: 4
+        L2_3_kernel_size: 2
+        L2_3_stride: 2
+        L5_kernel_size: 5
+        L5_hidden_size: 64
+    VISl:
+        L4_out_channels: 32
+        L4_kernel_size: 14
+        L4_padding: 6
+        L2_3_kernel_size: 2
+        L2_3_stride: 2
+        L5_kernel_size: 5
+        L5_hidden_size: 64
+    VISal:
+        L4_out_channels: 32
+        L4_kernel_size: 14
+        L4_padding: 6
+        L2_3_kernel_size: 2
+        L2_3_stride: 2
+        L5_kernel_size: 5
+        L5_hidden_size: 64
+    VISam:
+        L4_out_channels: 32
+        L4_kernel_size: 14
+        L4_padding: 6
+        L2_3_kernel_size: 2
+        L2_3_stride: 2
+        L5_kernel_size: 5
+        L5_hidden_size: 64
+    VISpm:
+        L4_out_channels: 32
+        L4_kernel_size: 14
+        L4_padding: 6
+        L2_3_kernel_size: 2
+        L2_3_stride: 2
+        L5_kernel_size: 5
+        L5_hidden_size: 64
+#     VISl2:
+#         L4_out_channels: 32
+#         L4_kernel_size: 5
+#         L4_padding: 2
+#         L2_3_kernel_size: 1
+#         L2_3_stride: 1
+#         L5_kernel_size: 5
+#         L5_hidden_size: 64
+#     VISal2:
+#         L4_out_channels: 16
+#         L4_kernel_size: 5
+#         L4_padding: 2
+#         L2_3_kernel_size: 1
+#         L2_3_stride: 1
+#         L5_kernel_size: 5
+#         L5_hidden_size: 32
+#     VISpm:
+#         L4_out_channels: 8
+#         L4_kernel_size: 9
+#         L4_padding: 4
+#         L2_3_kernel_size: 2
+#         L2_3_stride: 2 
+#         L5_kernel_size: 5
+#         L5_hidden_size: 16
+#     VISam:
+#         L4_out_channels: 8
+#         L4_kernel_size: 9
+#         L4_padding: 4
+#         L2_3_kernel_size: 2
+#         L2_3_stride: 2
+#         L5_kernel_size: 5
+#         L5_hidden_size: 16
+    
+
+model_name: SimMouseNet
+
