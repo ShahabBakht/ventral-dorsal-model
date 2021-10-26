@@ -114,9 +114,7 @@ def compute_ssm(similarity1, similarity2, num_shuffles=None, num_folds=None):
         lowertri_idx = np.tril_indices(similarity1.shape[0],k=-1)
         similarity1_lowertri = similarity1[lowertri_idx]
         similarity2_lowertri = similarity2[lowertri_idx]
-#         r,_ = spearmanr(similarity1_lowertri,similarity2_lowertri)#,
         r,_ = kendalltau(similarity1_lowertri,similarity2_lowertri)
-#         r,_ = spearmanr(similarity1.flatten(),similarity2.flatten())#,,nan_policy='omit'
         return r
     except:
 	    print("Error in calculating spearman correlation")
@@ -127,7 +125,6 @@ def center_activations(feature_dict):
     feature_dict_centered = dict()
     for layers, activation_arr in feature_dict.items():
         activation_flat = activation_arr.reshape((activation_arr.shape[0],-1))
-#         pdb.set_trace()
         if torch.is_tensor(activation_flat):
             activation_flat = activation_flat.numpy()
             

@@ -603,10 +603,6 @@ def get_activations_othermodels(data_,ModelName):
     def save_activation(name, mod, inp, out):
         activations[name].append(out.cpu())
 
-    # Registering hooks for all the Conv2d layers
-    # Note: Hooks are called EVERY TIME the module performs a forward pass. For modules that are
-    # called repeatedly at different stages of the forward pass (like RELUs), this will save different
-    # activations. Editing the forward pass code to save activations is the way to go for these cases.
     for name, m in net.named_modules():
         if type(m)==nn.Conv2d:
             # partial to assign the layer name to each hook
