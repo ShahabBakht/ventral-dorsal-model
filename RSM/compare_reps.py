@@ -120,7 +120,6 @@ def compare_reps(model_type = [('CPC','monkeynet','./epoch100.pth.tar')], StimTy
                         act_tmp = activations.mean(0)
                         RSM_tmp = all_RSM_Allen[:,:,j]
                         r[i,j]=compute_ssm(conv1, RSM_tmp)
-#                         r_cka[i,j] = kernel_CKA(act_tmp,act1)
             
             # downsample layers ##
             r = downsample_r(r,backbone=this_backbone)
