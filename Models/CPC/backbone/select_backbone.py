@@ -59,17 +59,6 @@ def select_mousenet():
     
     return model, param
 
-def select_simmousenet():
-    param = {'feature_size': None}
-    model = SimMouseNet()
-    param['output_area_list'] = model.OUTPUT_AREA_LIST
-    
-    param['feature_size'] =  256 #, 56 #256 # #256 
-
-    # TO DO: make feature_size calculation automatic
-    
-    return model, param
-
 def select_monkeynet(num_paths = 1):
     param = {'feature_size': None}
 #     model = DorsalNet_deep()
