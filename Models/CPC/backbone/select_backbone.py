@@ -4,7 +4,6 @@ import torch
 import torch.nn as nn
 from resnet_2d3d import * 
 from vgg_2d import *
-from SimMouseNet import *
 from monkeynet import *
 
 try:
