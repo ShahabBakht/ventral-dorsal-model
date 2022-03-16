@@ -66,3 +66,9 @@ def select_monkeynet(num_paths = 1):
     param['feature_size'] = num_paths * model.path1.resblocks_out_channels #96 #160 #160 #256 #
     
     return model, param
+
+def select_monkeynet_historical():
+    param = {'feature_size': 128}
+    model = DorsalNet_deep()
+    
+    return model, param
