@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 sys.path.append('../backbone')
-from select_backbone import select_resnet, select_mousenet, select_simmousenet, select_monkeynet
+from select_backbone import select_resnet, select_mousenet, select_monkeynet, select_monkeynet_historical
 from convrnn import ConvGRU
 
 
@@ -55,6 +55,8 @@ class DPC_RNN(nn.Module):
             self.backbone, self.param = select_monkeynet(num_paths = 1)
         elif network == 'monkeynet_p2':
             self.backbone, self.param = select_monkeynet(num_paths = 2)
+        elif network == 'monkeynet_historical':
+            self.backbone, self.param = select_monkeynet_historical()
         else:
             self.backbone, self.param = select_resnet(network, track_running_stats=False)
             

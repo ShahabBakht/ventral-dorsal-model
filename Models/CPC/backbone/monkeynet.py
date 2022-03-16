@@ -446,7 +446,22 @@ class VisualNet(nn.Module):
         
         if init_weights:
             self._initialize_weights()
-            
+
+        # For compatibility with YHITTMYA
+        self.layers = [
+            ("conv1", self.s1.conv1),
+            ("bn1", self.s1.bn1),
+            ("res0", self.path1.res_blocks["res0"]),
+            ("res1", self.path1.res_blocks["res1"]),
+            ("res2", self.path1.res_blocks["res2"]),
+            ("res3", self.path1.res_blocks["res3"]),
+            ("res4", self.path1.res_blocks["res4"]),
+            ("res5", self.path1.res_blocks["res5"]),
+            ("res6", self.path1.res_blocks["res6"]),
+            ("res7", self.path1.res_blocks["res7"]),
+            ("res8", self.path1.res_blocks["res8"]),
+            ("res9", self.path1.res_blocks["res9"]),
+        ]
             
     def _initialize_weights(self):
         for m in self.modules():
